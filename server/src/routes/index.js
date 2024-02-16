@@ -6,10 +6,10 @@ import personRoute from "./person.route.js";
 
 const router = express.Router();
 
-router.use("user", userRoute);
-router.use("reviews", reviewRoute);
-router.use(":mediaType", mediaRoute);
-router.use("person", personRoute);
+router.use("/user", userRoute);
+router.use("/reviews", reviewRoute);
+router.use("/:mediaType", mediaRoute);
+router.use("/person", personRoute);
 
 
 export default router;
